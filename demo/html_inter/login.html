@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signin details</title>
+    <link rel="stylesheet" href="E:\schoolhandon\csspart\style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!---======== css code starts=======-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: sans-serif;
+            height: 100%;
+        }
+        
+        #nav-bar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .navbar {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+            padding: 0 !important;
+        }
+        
+        .navbar-brand {
+            color: #ffffff !important;
+            font-weight: 800;
+            font-size: 27px !important;
+        }
+        
+        .navbar-nav li {
+            padding: 0 10px;
+        }
+        
+        .navbar-nav li a {
+            color: #ffffff !important;
+            font-weight: 600;
+        }
+        
+        .fa-sort-desc {
+            color: #ffffff;
+            font-size: 30px !important;
+        }
+        
+        .navbar-toggler {
+            outline: none !important;
+        }
+        
+        #banner {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+            color: #ffffff;
+            padding-top: 5%;
+        }
+        
+        .promo-tittle {
+            font-size: 40px;
+            font-weight: 600;
+            margin-top: 100px;
+        }
+        
+        .play-btn {
+            width: 45px;
+            margin: 20px;
+        }
+        
+        #banner a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .bottom-img {
+            width: 100%;
+        }
+        
+        .img-fluid {
+            padding-bottom: 25px;
+        }
+        
+        #services {
+            padding: 80px 0px;
+        }
+        
+        .services-img {
+            width: 100px;
+            margin-top: 20px;
+        }
+        
+        .services {
+            padding: 20%;
+        }
+        
+        .services h4 {
+            padding: 5px;
+            margin-top: 25px;
+            text-transform: uppercase;
+        }
+        
+        .tittle::before {
+            content: '';
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+            height: 5px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            transform: translateY(63px);
+        }
+        
+        .tittle::after {
+            content: '';
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+            height: 10px;
+            width: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+            display: block;
+            transform: translateY(8px);
+        }
+        
+        #services .btn-primary {
+            box-shadow: none;
+            padding: 8px 25px;
+            border: none;
+            border-radius: 20px;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+        }
+        /*about us id*/
+        
+        #about-us {
+            background: #f8f9fa;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        
+        .about-tittle {
+            font-size: 40px;
+            font-weight: 600;
+            margin-top: 8%;
+        }
+        
+        #about-us ul li {
+            margin: 10px 0;
+        }
+        
+        #about-us ul {
+            margin-left: 30px
+        }
+        /*test*/
+        
+        #testimonilas {
+            margin: 100px 0;
+        }
+        
+        .testimonilas {
+            border-left: 4px solid black;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .testimonilas img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin: 0 10px;
+        }
+        /*sovial media*/
+        
+        #social-media {
+            background: #f8f9fa;
+            padding: 100px 0
+        }
+        
+        #social-media p {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        .social-icons img {
+            width: 60px;
+            transition: 0.5px;
+        }
+        
+        .social-icons a:hover img {
+            transform: translateY(-10px)
+        }
+        /*fottersection*/
+        
+        #fotter {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+            color: #ffffff;
+        }
+        
+        #fotter-img {
+            width: 100%;
+        }
+        
+        .fotter-box {
+            padding: 20px;
+        }
+        
+        .fotter-box img {
+            width: 70px;
+            margin-bottom: 20px;
+            border-radius: 100%;
+        }
+        
+        .fotter-box .fa {
+            margin-right: 8px;
+            font-size: 25px;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            padding-top: 7px;
+            border-radius: 2px;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+        }
+        
+        .fotter-box .form-control {
+            box-shadow: none !important;
+            border: none;
+            border-radius: 0;
+            margin-top: 25px;
+            max-width: 250px;
+            border-radius: 20px;
+        }
+        
+        .fotter-box .btn-primary {
+            box-shadow: none !important;
+            border: none;
+            border-radius: 0;
+            margin-top: 30px;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+            border-radius: 20px;
+        }
+        
+        hr {
+            background-color: #ffffff;
+        }
+        
+        .copyright {
+            margin-bottom: 0;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        /*login*/
+        
+        .card0 {
+            box-shadow: 0px 4px 8px 0px #757575;
+            border-radius: 0px
+        }
+        
+        .card2 {
+            margin: 0px 40px
+        }
+        
+        .logo {
+            width: 250px;
+            height: 200px;
+            margin-top: 2px;
+            margin-left: 35px
+        }
+        
+        .image {
+            width: 360px;
+            height: 280px
+        }
+        
+        .border-line {
+            border-right: 1px solid #EEEEEE
+        }
+        
+        .google {
+            background-color: #ea4335;
+            color: #fff;
+            font-size: 18px;
+            padding-top: 5px;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            cursor: pointer
+        }
+        
+        .facebook {
+            background-color: #3b5998;
+            color: #fff;
+            font-size: 18px;
+            padding-top: 5px;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            cursor: pointer
+        }
+        
+        .twitter {
+            background-color: #1DA1F2;
+            color: #fff;
+            font-size: 18px;
+            padding-top: 5px;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            cursor: pointer
+        }
+        
+        .linkedin {
+            background-color: #2867B2;
+            color: #fff;
+            font-size: 18px;
+            padding-top: 5px;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            cursor: pointer
+        }
+        
+        .line {
+            height: 1px;
+            width: 45%;
+            background-color: #E0E0E0;
+            margin-top: 10px
+        }
+        
+        .or {
+            width: 10%;
+            font-weight: bold
+        }
+        
+        .text-sm {
+            font-size: 14px !important
+        }
+        
+         ::placeholder {
+            color: #BDBDBD;
+            opacity: 1;
+            font-weight: 300
+        }
+        
+         :-ms-input-placeholder {
+            color: #BDBDBD;
+            font-weight: 300
+        }
+        
+         ::-ms-input-placeholder {
+            color: #BDBDBD;
+            font-weight: 300
+        }
+        
+        input,
+        textarea {
+            padding: 10px 12px 10px 12px;
+            border: 1px solid lightgrey;
+            border-radius: 2px;
+            margin-bottom: 5px;
+            margin-top: 2px;
+            width: 100%;
+            box-sizing: border-box;
+            color: #2C3E50;
+            font-size: 14px;
+            letter-spacing: 1px
+        }
+        
+        input:focus,
+        textarea:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            border: 1px solid #304FFE;
+            outline-width: 0;
+        }
+        
+        button:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            outline-width: 0
+        }
+        
+        a {
+            color: inherit;
+            cursor: pointer
+        }
+        
+        .btn-blue {
+            background-color: #1A237E;
+            width: 150px;
+            color: black;
+            border-radius: 20px
+        }
+        
+        .btn-blue:hover {
+            background: DodgerBlue;
+            /*  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);*/
+            color: white;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        
+        .btn-cancle {
+            background-color: #1A237E;
+            width: 150px;
+            color: black;
+            border-radius: 20px
+        }
+        
+        .btn-cancle:hover {
+            /* background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);*/
+            background-color: rgb(255, 73, 71);
+            color: white;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        
+        .bg-blue {
+            color: #fff;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+        }
+        
+        @media screen and (max-width: 991px) {
+            .logo {
+                margin-left: 0px
+            }
+            .image {
+                width: 300px;
+                height: 220px
+            }
+            .border-line {
+                border-right: none
+            }
+            .card2 {
+                border-top: 1px solid #EEEEEE !important;
+                margin: 0px 15px
+            }
+        }
+        /*signin*/
+        /*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+        
+        .border-md {
+            border-width: 2px;
+        }
+        
+        .btn-google {
+            background: #405D9D;
+            border: none;
+        }
+        
+        .btn-google:hover,
+        .btn-google:focus {
+            background: #314879;
+        }
+        
+        .btn-facebook {
+            background: #405D9D;
+            border: none;
+        }
+        
+        .btn-facebook:hover,
+        .btn-facebook:focus {
+            background: #314879;
+        }
+        
+        .btn-twitter {
+            background: #42AEEC;
+            border: none;
+        }
+        
+        .btn-twitter:hover,
+        .btn-twitter:focus {
+            background: #1799e4;
+        }
+        /*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+        
+        .form-control:not(select) {
+            padding: 1.5rem 0.5rem;
+        }
+        
+        select.form-control {
+            height: 52px;
+            padding-left: 0.5rem;
+        }
+        
+        .form-control::placeholder {
+            color: #ccc;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .form-control:focus {
+            box-shadow: none;
+        }
+        
+        .dropdown-item {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+        }
+        
+        .dropdown-menu {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+        }
+        
+        .font-weight-bolds {
+            background-color: #007BEF;
+            color: white;
+            border: transparent;
+        }
+        
+        .card-img-top {
+            height: 180px;
+            width: 180px;
+        }
+        /*demo*/
+        
+        .carousel-indicators ol {
+            margin-top: 0;
+            margin-bottom: auto;
+            background-color: black;
+        }
+        
+        .carousel-control-prev:hover {
+            background-color: rgb(142, 230, 252);
+        }
+        
+        .carousel-control-next:hover {
+            background-color: gray;
+        }
+        /* demo shizzle only */
+        
+        .bodys {
+            background: #eee;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            /*   outline: 1px solid #ccc; */
+        }
+        /* Still use global css (not utility css) for base typography etc? */
+        
+        p {
+            margin-bottom: 0.8em;
+        }
+    </style>
+    <!---================ css code ends=====================-->
+</head>
+
+<body>
+
+    <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light py-3">
+                <div class="container">
+                    <!-- Navbar Brand -->
+                    <a href="../index.html" class="navbar-brand">
+                        <!--- <img src="https://res.cloudinary.com/mhmd/image/upload/v1571398888/Group_1514_tjekh3_zkts1c.svg" alt="logo" width="150">-->
+                        Grocery On-Hand
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <div class="card card0 border-0">
+            <div class="row d-flex">
+                <div class="col-lg-6">
+                    <div class="card1 pb-5">
+                        <!----   <div class="row"> <img src="..\imgs\e-learning-icon-simple-distance-education-symbol-vector-20986787.jpg" class="logo"> </div>-->
+                        <div class="row px-3 justify-content-center mt-4 mb-5 border-line"> <img src="../imgs/print-171910968.jpg" class="image"> </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card2 card border-0 px-4 py-5">
+                        <div class="row mb-4 px-3">
+                            <h6 class="mb-0 mr-4 mt-2">Sign in with</h6>
+                            <div class="google text-center mr-3">
+                                <div class="fa fa-google-plus"></div>
+                            </div>
+                            <div class="facebook text-center mr-3">
+                                <div class="fa fa-facebook"></div>
+                            </div>
+                            <div class="twitter text-center mr-3">
+                                <div class="fa fa-twitter"></div>
+                            </div>
+                            <div class="linkedin text-center mr-3">
+                                <div class="fa fa-linkedin"></div>
+                            </div>
+                        </div>
+                        <div class="row px-3 mb-4">
+                            <div class="line"></div> <small class="or text-center">Or</small>
+                            <div class="line"></div>
+                        </div>
+                        <form action="/api/authenticate" method="POST">
+                            <div class="row px-3"> <label class="mb-1">
+                                <h6 class="mb-0 text-sm">Email Address *</h6>
+                            </label> <input class="mb-4" type="email" name="email" placeholder="Enter a valid email address" required> </div>
+                            <div class="row px-3"> <label class="mb-1">
+                                <h6 class="mb-0 text-sm">Password *</h6>
+                            </label> <input type="password" name="password" placeholder="Enter password" required> </div>
+                            <div class="row px-3 mb-4">
+                                <div class="custom-control custom-checkbox custom-control-inline"> <input id="chk1" type="checkbox" name="chk" class="custom-control-input" required> <label for="chk1" class="custom-control-label text-sm">Remember me</label> </div> <a href="forgot_password.html" class="ml-auto mb-0 text-sm">Forgot Password?</a>
+                            </div>
+                            <div class="row mb-3 px-3"> <input type="submit" value="Login" class="btn btn-outline-primary "></input>
+                            </div>
+                            <!-- <button class="btn btn-cancle text-center">Cancle</button>-->
+                            <div class="row mb-4 px-3"> <small class="font-weight-bold">Don't have an account? <a class="text-danger" href="signin.html">Register</a></small> </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-blue py-4">
+                <div class="row px-3"> <small class="ml-4 ml-sm-5 mb-2">Copyright &copy; 2020. All rights reserved by vinay.</small>
+                    <div class="social-contact ml-4 ml-sm-auto">
+                        <a href="https://www.facebook.com/" target="_blank"><span class="fa fa-facebook mr-4 text-sm"></span></a>
+                        <a href="https://myaccount.google.com/" target="_blank"><span class="fa fa-google-plus mr-4 text-sm"></span></a>
+                        <a href="https://in.linkedin.com/" target="_blank"><span class="fa fa-linkedin mr-4 text-sm"></span></a>
+                        <a href="https://twitter.com/" target="_blank"><span class="fa fa-twitter mr-4 mr-sm-5 text-sm"></span></a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

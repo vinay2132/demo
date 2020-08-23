@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery On-Hand</title>
+    <link rel="stylesheet" href=" style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!---==============css code start=================-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: sans-serif;
+            height: 100%;
+        }
+        
+        #nav-bar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .navbar {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+            padding: 0 !important;
+        }
+        
+        .navbar-brand {
+            color: #ffffff !important;
+            font-weight: 800;
+            font-size: 27px !important;
+        }
+        
+        .navbar-nav li {
+            padding: 0 10px;
+        }
+        
+        .navbar-nav li a {
+            color: #ffffff !important;
+            font-weight: 600;
+        }
+        
+        .fa-sort-desc {
+            color: #ffffff;
+            font-size: 30px !important;
+        }
+        
+        .navbar-toggler {
+            outline: none !important;
+        }
+        
+        #banner {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+            color: #ffffff;
+            padding-top: 5%;
+        }
+        
+        .promo-tittle {
+            font-size: 40px;
+            font-weight: 600;
+            margin-top: 100px;
+        }
+        
+        .play-btn {
+            width: 45px;
+            margin: 20px;
+        }
+        
+        #banner a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .bottom-img {
+            width: 100%;
+        }
+        
+        .img-fluid {
+            padding-bottom: 25px;
+        }
+        
+        #services {
+            padding: 80px 0px;
+        }
+        
+        .services-img {
+            width: 100px;
+            margin-top: 20px;
+        }
+        
+        .services {
+            padding: 20%;
+        }
+        
+        .services h4 {
+            padding: 5px;
+            margin-top: 25px;
+            text-transform: uppercase;
+        }
+        
+        .tittle::before {
+            content: '';
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+            height: 5px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            transform: translateY(63px);
+        }
+        
+        .tittle::after {
+            content: '';
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+            height: 10px;
+            width: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40px;
+            display: block;
+            transform: translateY(8px);
+        }
+        
+        #services .btn-primary {
+            box-shadow: none;
+            padding: 8px 25px;
+            border: none;
+            border-radius: 20px;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+        }
+        /*about us id*/
+        
+        #about-us {
+            background: #f8f9fa;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        
+        .about-tittle {
+            font-size: 40px;
+            font-weight: 600;
+            margin-top: 8%;
+        }
+        
+        #about-us ul li {
+            margin: 10px 0;
+        }
+        
+        #about-us ul {
+            margin-left: 30px
+        }
+        /*test*/
+        
+        #testimonilas {
+            margin: 100px 0;
+        }
+        
+        .testimonilas {
+            border-left: 4px solid black;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        
+        .testimonilas img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin: 0 10px;
+        }
+        /*sovial media*/
+        
+        #social-media {
+            background: #f8f9fa;
+            padding: 100px 0
+        }
+        
+        #social-media p {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        .social-icons img {
+            width: 60px;
+            transition: 0.5px;
+        }
+        
+        .social-icons a:hover img {
+            transform: translateY(-10px)
+        }
+        /*fottersection*/
+        
+        #fotter {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+            color: #ffffff;
+        }
+        
+        #fotter-img {
+            width: 100%;
+        }
+        
+        .fotter-box {
+            padding: 20px;
+        }
+        
+        .fotter-box img {
+            width: 70px;
+            margin-bottom: 20px;
+            border-radius: 100%;
+        }
+        
+        .fotter-box .fa {
+            margin-right: 8px;
+            font-size: 25px;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            padding-top: 7px;
+            border-radius: 2px;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+        }
+        
+        .fotter-box .form-control {
+            box-shadow: none !important;
+            border: none;
+            border-radius: 0;
+            margin-top: 25px;
+            max-width: 250px;
+            border-radius: 20px;
+        }
+        
+        .fotter-box .btn-primary {
+            box-shadow: none !important;
+            border: none;
+            border-radius: 0;
+            margin-top: 30px;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+            border-radius: 20px;
+        }
+        
+        hr {
+            background-color: #ffffff;
+        }
+        
+        .copyright {
+            margin-bottom: 0;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        /*login*/
+        
+        .card0 {
+            box-shadow: 0px 4px 8px 0px #757575;
+            border-radius: 0px
+        }
+        
+        .card2 {
+            margin: 0px 40px
+        }
+        
+        .logo {
+            width: 250px;
+            height: 200px;
+            margin-top: 2px;
+            margin-left: 35px
+        }
+        
+        .image {
+            width: 360px;
+            height: 280px
+        }
+        
+        .border-line {
+            border-right: 1px solid #EEEEEE
+        }
+        
+        .google {
+            background-color: #ea4335;
+            color: #fff;
+            font-size: 18px;
+            padding-top: 5px;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            cursor: pointer
+        }
+        
+        .facebook {
+            background-color: #3b5998;
+            color: #fff;
+            font-size: 18px;
+            padding-top: 5px;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            cursor: pointer
+        }
+        
+        .twitter {
+            background-color: #1DA1F2;
+            color: #fff;
+            font-size: 18px;
+            padding-top: 5px;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            cursor: pointer
+        }
+        
+        .linkedin {
+            background-color: #2867B2;
+            color: #fff;
+            font-size: 18px;
+            padding-top: 5px;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            cursor: pointer
+        }
+        
+        .line {
+            height: 1px;
+            width: 45%;
+            background-color: #E0E0E0;
+            margin-top: 10px
+        }
+        
+        .or {
+            width: 10%;
+            font-weight: bold
+        }
+        
+        .text-sm {
+            font-size: 14px !important
+        }
+        
+         ::placeholder {
+            color: #BDBDBD;
+            opacity: 1;
+            font-weight: 300
+        }
+        
+         :-ms-input-placeholder {
+            color: #BDBDBD;
+            font-weight: 300
+        }
+        
+         ::-ms-input-placeholder {
+            color: #BDBDBD;
+            font-weight: 300
+        }
+        
+        input,
+        textarea {
+            padding: 10px 12px 10px 12px;
+            border: 1px solid lightgrey;
+            border-radius: 2px;
+            margin-bottom: 5px;
+            margin-top: 2px;
+            width: 100%;
+            box-sizing: border-box;
+            color: #2C3E50;
+            font-size: 14px;
+            letter-spacing: 1px
+        }
+        
+        input:focus,
+        textarea:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            border: 1px solid #304FFE;
+            outline-width: 0;
+        }
+        
+        button:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            outline-width: 0
+        }
+        
+        a {
+            color: inherit;
+            cursor: pointer
+        }
+        
+        .btn-blue {
+            background-color: #1A237E;
+            width: 150px;
+            color: black;
+            border-radius: 20px
+        }
+        
+        .btn-blue:hover {
+            background: DodgerBlue;
+            /*  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);*/
+            color: white;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        
+        .btn-cancle {
+            background-color: #1A237E;
+            width: 150px;
+            color: black;
+            border-radius: 20px
+        }
+        
+        .btn-cancle:hover {
+            /* background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);*/
+            background-color: rgb(255, 73, 71);
+            color: white;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        
+        .bg-blue {
+            color: #fff;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+        }
+        
+        @media screen and (max-width: 991px) {
+            .logo {
+                margin-left: 0px
+            }
+            .image {
+                width: 300px;
+                height: 220px
+            }
+            .border-line {
+                border-right: none
+            }
+            .card2 {
+                border-top: 1px solid #EEEEEE !important;
+                margin: 0px 15px
+            }
+        }
+        /*signin*/
+        /*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+        
+        .border-md {
+            border-width: 2px;
+        }
+        
+        .btn-google {
+            background: #405D9D;
+            border: none;
+        }
+        
+        .btn-google:hover,
+        .btn-google:focus {
+            background: #314879;
+        }
+        
+        .btn-facebook {
+            background: #405D9D;
+            border: none;
+        }
+        
+        .btn-facebook:hover,
+        .btn-facebook:focus {
+            background: #314879;
+        }
+        
+        .btn-twitter {
+            background: #42AEEC;
+            border: none;
+        }
+        
+        .btn-twitter:hover,
+        .btn-twitter:focus {
+            background: #1799e4;
+        }
+        /*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+        
+        .form-control:not(select) {
+            padding: 1.5rem 0.5rem;
+        }
+        
+        select.form-control {
+            height: 52px;
+            padding-left: 0.5rem;
+        }
+        
+        .form-control::placeholder {
+            color: #ccc;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .form-control:focus {
+            box-shadow: none;
+        }
+        
+        .dropdown-item {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+        }
+        
+        .dropdown-menu {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(81, 81, 81, 1) 89%);
+        }
+        
+        .font-weight-bolds {
+            background-color: #007BEF;
+            color: white;
+            border: transparent;
+        }
+        
+        .card-img-top {
+            height: 180px;
+            width: 180px;
+        }
+        /*demo*/
+        
+        .carousel-indicators ol {
+            margin-top: 0;
+            margin-bottom: auto;
+            background-color: black;
+        }
+        
+        .carousel-control-prev:hover {
+            background-color: rgb(142, 230, 252);
+        }
+        
+        .carousel-control-next:hover {
+            background-color: gray;
+        }
+        /* demo shizzle only */
+        
+        .bodys {
+            background: #eee;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            /*   outline: 1px solid #ccc; */
+        }
+        /* Still use global css (not utility css) for base typography etc? */
+        
+        p {
+            margin-bottom: 0.8em;
+        }
+        
+        .couponss {
+            border: 5px dotted #bbb;
+            /* Dotted border */
+            width: 80%;
+            border-radius: 15px;
+            /* Rounded border */
+            margin: 0 auto;
+            /* Center the coupon */
+            max-width: 600px;
+        }
+        
+        .containerss {
+            padding: 2px 16px;
+            background-color: #f1f1f1;
+        }
+        
+        .promoss {
+            background: #ccc;
+            padding: 3px;
+        }
+        
+        .expire {
+            color: red;
+        }
+    </style>
+    <!--======================css code ends===============-->
+</head>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="../index.html">Grocery On-Hand</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fa fa-sort-desc" aria-hidden="true"></span>
+            </button>
+
+        </nav>
+
+    </section>
+
+    <!---banner-->
+    <section id="banner">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="promo-tittle">
+                        Mangoes
+                    </p>
+                    <p>Mangoes are generally sweet, although the taste and texture of the flesh varies across cultivars; some, such as Alphonso, have a soft, pulpy, juicy texture similar to an overripe plum, while others, such as Tommy Atkins, are firmer,
+                        like a cantaloupe or avocado, with a fibrous texture. The skin of unripe, pickled, or cooked mango can be eaten, but it has the potential to cause contact dermatitis of the lips, gingiva, or tongue in susceptible people..
+                    </p>
+                    <p>
+                        <h2>Rs: 29/-</h2>
+                    </p>
+                    <img src=" https://img.icons8.com/flat_round/108/000000/down-right-arrow--v1.png" class="play-btn" />
+                    <a href="mybasket.html">Add To Cart</a>
+
+                </div>
+                <div class="col-md-6">
+
+                    <img src="../imgs/mangoes-chopped-and-fresh.jpg" class="img-fluid">
+
+
+                </div>
+            </div>
+        </div>
+
+        <!--fotter section-->
+
+        <section id="fotter">
+            <img src="" class="fotter-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 fotter-box">
+
+
+                    </div>
+                    <div class="col-md-4 fotter-box">
+
+                    </div>
+                    <div class="col-md-4 fotter-box">
+
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright ">Copyright &copy; 2020. All rights reserved by vinay</p>
+            </div>
+
+        </section>
+
+
+        <!--smoothscreol js-->
+        <script src="jquarry_js/smooth-scroll.js">
+            var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
+    </section>
+</body>
+
+</html>

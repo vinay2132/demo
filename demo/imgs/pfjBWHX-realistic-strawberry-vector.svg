@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+ <defs>
+ <pattern id="dotted" width="30" patternUnits="userSpaceOnUse" patternTransform="translate(173.8, 315.8)" height="32">
+ <g transform="translate(-173.8, -315.8)">
+<path id="patternbase" d="m188,327c0,3-2,6-4,6s-4-3-4-6,2-6,4-6,4,3,4,6z" fill="lightred"/>
+ <use xlink:href="#patternbase" transform="translate(-5, 12)"/>
+ <use xlink:href="#patternbase" transform="translate(15, 12)"/>
+ <use xlink:href="#patternbase" transform="matrix(0.74, 0.67, -0.67, 0.74, 277, -62)"/>
+ <use xlink:href="#patternbase" transform="matrix(0.44, 0.64, -0.56, 0.52, 303.6, 1.38)"/>
+ </g>
+ </pattern>
+ <linearGradient id="lGleaf1">
+ <stop stop-color="#79b67d" stop-opacity="0.5" offset="0"/>
+ <stop stop-color="#50b656" offset="0.6"/>
+ <stop stop-color="#00ffe3" offset="1"/>
+ </linearGradient>
+ <linearGradient id="lGstem" y2="276" gradientUnits="userSpaceOnUse" x2="259" y1="322" x1="204">
+ <stop stop-color="#7e272c" offset="0"/>
+ <stop stop-color="#69a92c" offset="0.6"/>
+ <stop stop-color="#a0d32c" offset="1"/>
+ </linearGradient>
+ <linearGradient id="lGleaf2">
+ <stop stop-color="#7e867a" offset="0"/>
+ <stop stop-color="#7edb7a" offset="0.6"/>
+ <stop stop-color="#7ed35f" offset="0.67"/>
+ <stop stop-color="#7ec57a" offset="1"/>
+ </linearGradient>
+ <linearGradient id="lGleaf3">
+ <stop stop-color="#79b67d" stop-opacity="0.2" offset="0"/>
+ <stop stop-color="#50b656" offset="0.6"/>
+ <stop stop-color="#00ffd2" offset="1"/>
+ </linearGradient>
+ <linearGradient id="lGleaf8">
+ <stop stop-color="#1c6325" offset="0"/>
+ <stop stop-color="#50b656" offset="0.6"/>
+ <stop stop-color="#00ea75" offset="1"/>
+ </linearGradient>
+ <linearGradient id="lGleaf7">
+ <stop stop-color="#43805f" offset="0"/>
+ <stop stop-color="#808041" offset="1"/>
+ </linearGradient>
+ <linearGradient id="lGleaf5">
+ <stop stop-color="#1c9469" offset="0"/>
+ <stop stop-color="#c4bd74" offset="1"/>
+ </linearGradient>
+ <linearGradient id="lGleaf6">
+ <stop stop-color="#1c4712" offset="0"/>
+ <stop stop-color="#00ffba" offset="1"/>
+ </linearGradient>
+ <linearGradient id="lGleaf4">
+ <stop stop-color="#005123" offset="0"/>
+ <stop stop-color="#00ae41" offset="1"/>
+ </linearGradient>
+ <radialGradient id="rGshadow" gradientUnits="userSpaceOnUse" cy="565" cx="311" gradientTransform="matrix(0.67, -0.69, 0.96, 0.93, -438.6, 199.5)" r="75">
+ <stop stop-color="#2b0000" offset="0"/>
+ <stop stop-color="#2b0000" stop-opacity="0" offset="1"/>
+ </radialGradient>
+ <radialGradient id="rGbasespeck" gradientUnits="userSpaceOnUse" cy="473" cx="328" gradientTransform="matrix(0.73, 0.92, -0.74, 0.6, 440.2, -108.2)" r="4">
+ <stop stop-color="#d4b400" offset="0"/>
+ <stop stop-color="#730b00" offset="1"/>
+</radialGradient>
+ <radialGradient id="rGspeckstroke" gradientUnits="userSpaceOnUse" cy="476" cx="328" gradientTransform="matrix(-0.69, -2.09, 2.2, -0.72, -492.6, 1502)" r="4">
+ <stop stop-color="#900000" stop-opacity="0.6" offset="0"/>
+ <stop stop-color="#000" offset="1"/>
+</radialGradient>
+ <radialGradient id="rGlight" gradientUnits="userSpaceOnUse" cx="347" cy="505" r="104" gradientTransform="matrix(0, -0.91, 1.23, 0.12, -286, 705.1)">
+ <stop stop-color="#fff" stop-opacity="0.8" offset="0"/>
+ <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+ </radialGradient>
+ <radialGradient id="rGouterspeckstroke">
+ <stop stop-color="#ff07c0" stop-opacity="0.45" offset="0"/>
+ <stop stop-color="#fff" offset="0.3"/>
+ <stop stop-color="#F00" offset="1"/>
+</radialGradient>
+ <radialGradient id="rGouterspeck" transform="translate(-10,-5)">
+ <stop stop-color="#500" offset="0"/>
+ <stop stop-color="#ac0000" offset="1"/>
+</radialGradient>
+ <radialGradient id="rGbasespeck2" gradientUnits="userSpaceOnUse" cy="494" cx="300" gradientTransform="matrix(-0.12, 1.26, -1.35, -0.13, 1108, 232.4)" r="10">
+ <stop stop-color="#500" offset="0"/>
+ <stop stop-color="#ac0000" offset="1"/>
+</radialGradient>
+ <radialGradient id="rGmain" gradientUnits="userSpaceOnUse" cy="455" cx="350" gradientTransform="matrix(0.96, 0.67, -0.6, 0.86, 314.2, -145.3)" r="164">
+ <stop stop-color="#a20000" offset="0"/>
+ <stop stop-color="#a80000" offset="0.8"/>
+ <stop stop-color="#7e0000" offset="1"/>
+ </radialGradient>
+ <radialGradient id="rGbasespeck3" gradientUnits="userSpaceOnUse" cy="494" cx="301" gradientTransform="matrix(-1.09, 1.71, -1.6, -0.91, 1527, 477.5)" r="10">
+ <stop id="stop4147" stop-color="#b70000" offset="0"/>
+ <stop id="stop4151" stop-color="#d57f7f" offset="0.7"/>
+ <stop id="stop4149" stop-color="#fff" stop-opacity="0.6" offset="1"/>
+ </radialGradient>
+ <filter id="blur02">
+ <feGaussianBlur stdDeviation="0.2"/>
+ </filter>
+ <filter id="blur06">
+ <feGaussianBlur stdDeviation="0.6"/>
+ </filter>
+<filter id="blur1">
+ <feGaussianBlur stdDeviation="1"/>
+ </filter>
+ <filter id="blur6">
+ <feGaussianBlur stdDeviation="6"/>
+ </filter>
+ <filter id="crinkled" height="1.5" width="1.5" color-interpolation-filters="sRGB" y="-0.25" x="-0.25">
+ <feGaussianBlur result="result9" stdDeviation="1" in="SourceGraphic"/>
+ <feTurbulence baseFrequency="0.015" seed="0" result="result7" numOctaves="7" type="fractalNoise"/>
+ <feComposite operator="out" in="result9" in2="result7" result="result6"/>
+ <feGaussianBlur stdDeviation="2" result="result11"/>
+ <feDisplacementMap scale="100" yChannelSelector="G" in2="result11" result="result4" xChannelSelector="A" in="result7"/>
+ <feComposite operator="in" in="result9" in2="result4" result="result2"/>
+ <feComposite operator="in" in2="SourceGraphic" result="fbSourceGraphic"/>
+ <feBlend mode="multiply" in2="fbSourceGraphic" result="fbSourceGraphic"/>
+ <feGaussianBlur stdDeviation="0.5" result="result13"/>
+ <feSpecularLighting result="result12" surfaceScale="15" specularExponent="5" in="result13">
+ <feDistantLight elevation="35" azimuth="145"/>
+ </feSpecularLighting>
+ <feComposite result="result2" operator="in" in2="fbSourceGraphic" in="result12"/>
+ <feComposite in2="result2" k3="1" k2="1" result="result4" in="fbSourceGraphic" operator="arithmetic"/>
+ </filter>
+ <radialGradient id="rGbackground" gradientUnits="userSpaceOnUse" cy="386" cx="378" gradientTransform="matrix(1, 0, 0, 0.8, 0, 84.84)" r="329">
+ <stop stop-color="#c00000" offset="0"/>
+ <stop stop-color="#2b0000" offset="1"/>
+ </radialGradient>
+ <path id="strawberrymain" d="m512.2,514.9c24.9,123.6-74.1,190.8-191.1,121.7-62.4-36.8-110.6-61.8-130.3-142.5-15.3-62.8,47.3-92.7,96.8-110,21.8-7.6,32.1-21,52.8-31.7,125.1-64.8,192.3,58.3,171.8,162.5z" transform="translate(-35.71, -23.57)"/>
+ <g id="gleafs">
+ <path id="leaf3" d="m286,376c9,7,33-27,35-32,16-26,1-57,0-57-15,39-58,84-35,89z" fill="url(#lGleaf3)"/>
+ <path id="leaf8" d="m298,384c9,7,35-17,38-21,16-26,3-62,2-63-15,39-62,78-40,84z" fill="url(#lGleaf8)"/>
+ <path id="leaf1" d="m294,327c-7,24-7,36-14,38-12,3-19-32-19-37-3-30,22-52,24-52,1,0-2,12-0,18,1,1,5-6,5-5,1,11,4,25,4,39z" fill="url(#lGleaf1)"/>
+ <path id="leaf7" fill="url(#lGleaf7)" d="m271,390c-13-1-27,3-38,10-6,8-16,13-22,22-8,2-15,5-22,9-6,4-14,8-19,12-11,6-20,13-29,17l66-22c12-7,33-20,49-24,8-3,15-6,23-9l-8-13"/>
+ <path id="leaf2" d="m319,415c-3-1-15-5-13,1-8-0-28,1-31-21,4-5,20-4,22-16,12,0,25,17,25,17-5,5-6,12-4,18z" fill="url(#lGleaf2)"/>
+ <path id="leaf4" d="m268,373-19-1-20-9-19,0-23,5-9,0c6,8,15,14,24,16,6,1,12,2,18,2l50,6h4l-7-20" fill="url(#lGleaf4)"/>
+ <path id="leaf5" fill="url(#lGleaf5)" d="m235,392-36,1c-15,2-29,8-42,17-11,10-26,26-33,41,85-55,89-43,121-52l-11-7"/>
+ <path id="leaf6" d="m271,387-85,6c-8-2-16-2-24-1-14,2-28,7-40,15,8,1,16,2,24,2,13,0,27-0,40-2l88-11-3-9" fill="url(#lGleaf6)"/>
+ </g>
+<g id="gspecks">
+ <g id="gbasespeck" opacity="0.3" stroke-width="1">
+ <path id="baseouterspeck" d="m336.6,471.5c1.7,7.3,0.5,11-2.8,13-2.5,1.6-13.3-0.6-15.3-7.3-1.7-5.9-0.7-14.4,3.8-16s13.1,5.2,14.3,10.3z" filter="url(#blur06)" stroke="url(#rGouterspeckstroke)" fill="url(#rGouterspeck)"/>
+ <path id="basespeck" d="m331,476c0,3-2,5-4,5s-4-2-4-5,2-5,4-5,4,2,4,5z" transform="matrix(0.93, -0.36, 0.36, 0.93, -150, 147.1)" filter="url(#blur02)" stroke="url(#rGspeckstroke)" fill="url(#rGbasespeck)"/>
+ </g>
+ <use xlink:href="#gbasespeck" transform="translate(23.57, 7.5)"/>
+ <use xlink:href="#gbasespeck" transform="translate(4.285, -25)"/>
+ <use xlink:href="#gbasespeck" transform="translate(29.64, -15.71)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.98, 0.21, -0.21, 0.98, 79.64, -41.67)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.87, 0.13, -0.12, 0.85, 98.07, 54.22)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.74, 0.2, -0.19, 0.77, 141.3, 88.82)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(1.11, 0.28, -0.25, 1.28, 13.96, -209.5)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(1.01, 0.28, -0.22, 1.28, 50.38, -227.8)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.87, 0.2, -0.18, 0.98, 98.91, -77.85)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.68, -0.12, 0.16, 0.88, 9.69, 60.19)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.98, 0.18, -0.18, 0.98, 141.8, -33.23)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.9, -0.18, 0.18, 0.87, -26.71, 153.5)"/>
+ <use xlink:href="#gbasespeck" transform="translate(-8.571, 53.57)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.88, 0, 0, 0.94, 58.79, 94.28)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.72, 0, 0, 0.75, 101.9, 202)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.84, -0.24, 0.24, 0.84, -79.97, 231.2)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.93, -0.22, 0.27, 0.79, -51.69, 132.5)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.99, -0.17, 0.17, 0.99, -19.44, 49.25)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.71, -0.23, 0.22, 0.74, 15.33, 152.6)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.72, -0.18, 0.18, 0.71, 14.61, 144.6)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.71, -0.38, 0.39, 0.69, -72.38, 196.2)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.71, -0.34, 0.4, 0.62, -39.29, 228.5)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.51, -0.44, 0.5, 0.48, -37.89, 302.7)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.68, -0.4, 0.31, 0.87, 33.61, 161.2)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.58, -0.31, 0.32, 0.56, 62.02, 299.3)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.56, -0.27, 0.29, 0.54, 83.58, 326.9)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.66, -0.18, 0.16, 0.74, 79.65, 219.5)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.74, 0, 0, 0.65, 152.5, 207.3)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.83, 0, 0, 0.78, 98.3, 169.3)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.74, 0, 0, 0.56, 179.8, 144.6)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.78, 0.19, -0.17, 0.86, 78.02, 52.81)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.61, -0.39, 0.35, 0.68, 61.99, 248.5)"/>
+<g opacity="0.6">
+ <use xlink:href="#gbasespeck" transform="matrix(0.8, 0.6, -0.6, 0.8, 303, -138.2)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.78, 0.62, -0.62, 0.78, 291.9, -126.3)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.53, 0.67, -0.48, 0.74, 293.2, -99.25)"/>
+ <path id="basespeck2" opacity="0.6" d="m419.9,548.8c1.7,7.3,0.5,11-2.8,13-2.5,1.6-13.3-0.6-15.3-7.3-1.7-5.9-0.7-14.4,3.8-16s13.1,5.2,14.3,10.3z" transform="matrix(0.64, 0, 0, 0.72, 130.4, 150.6)" fill="url(#rGbasespeck2)"/>
+</g>
+ <use xlink:href="#basespeck2" transform="matrix(0.8, 0, 0, 0.85, 95.53, 82.7)"/>
+ <use opacity="0.8" xlink:href="#basespeck2" transform="matrix(0.84, 0, 0, 0.88, 32.99, 82.62)"/>
+ <use xlink:href="#basespeck2" transform="matrix(0.86, -0.21, 0.23, 0.81, -81.28, 205.7)"/>
+ <use xlink:href="#basespeck2" transform="matrix(1.2, 0, 0, 0.79, -124.3, 150)"/>
+ <use xlink:href="#basespeck2" transform="matrix(0.88, -0.47, 0.47, 0.88, -229.2, 285.3)"/>
+ <use xlink:href="#basespeck2" transform="matrix(0.93, -0.36, 0.36, 0.93, -145.3, 162.9)"/>
+ <use xlink:href="#basespeck2" transform="translate(9.091, 23.23)"/>
+ <use xlink:href="#basespeck2" transform="translate(25.76, 25.25)"/>
+ <use xlink:href="#basespeck2" transform="matrix(0.71, -0.25, 0.26, 0.69, -26.78, 313.5)"/>
+ <use xlink:href="#basespeck2" transform="matrix(0.88, -0.47, 0.47, 0.88, -167.8, 248.8)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.66, -0.32, 0.38, 0.55, 25.16, 343.4)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.39, -0.49, 0.38, 0.52, 134.2, 412)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.58, -0.22, 0.25, 0.55, 112.8, 274.7)"/>
+ <use opacity="0.6" xlink:href="#gbasespeck" transform="matrix(0.51, 0.67, -0.7, 0.49, 405.3, -24.1)"/>
+ <use xlink:href="#basespeck2" transform="matrix(0.76, -0.35, 0.4, 0.67, -117.5, 379.5)"/>
+ <use xlink:href="#basespeck2" transform="matrix(0.89, -0.45, 0.45, 0.89, -216.7, 296.5)"/>
+ <path id="basespeck3" opacity="0.3" d="m419.9,548.8c1.7,7.3,0.5,11-2.8,13-2.5,1.6-13.3-0.6-15.3-7.3-1.7-5.9-0.7-14.4,3.8-16s13.1,5.2,14.3,10.3z" transform="matrix(0.42, 0, 0, 0.4, 52.64, 307.6)" fill="url(#rGbasespeck3)"/>
+ <use opacity="0.5" xlink:href="#basespeck3" transform="matrix(0.86, 0.5, -0.5, 0.86, 302.4, -62.8)"/>
+ <use xlink:href="#basespeck3" transform="matrix(0.74, 0.67, -0.67, 0.74, 393.3, -30.62)"/>
+ <use xlink:href="#basespeck3" transform="matrix(0.45, 0.64, -0.56, 0.52, 406.3, 70.31)"/>
+ <use xlink:href="#basespeck3" transform="matrix(0.51, 0.67, -0.54, 0.64, 368.2, -8.35)"/>
+ <use xlink:href="#basespeck2" transform="matrix(0.97, -0.26, 0.26, 0.97, -119.5, -16.27)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.7, -0.39, 0.38, 0.71, -24.14, 177.4)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.69, -0.45, 0.44, 0.72, -17.72, 193.5)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.72, -0.41, 0.38, 0.77, 23.16, 182.7)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.76, 0, 0, 0.53, 203.7, 142.2)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.63, -0.3, 0.25, 0.54, 93.93, 205)"/>
+ <use xlink:href="#gbasespeck" transform="matrix(0.76, 0, 0, 0.65, 188.6, 58.27)"/>
+ <use xlink:href="#basespeck3" transform="translate(2, 28)"/>
+ <use xlink:href="#basespeck3" transform="translate(-15, 10)"/>
+ <use xlink:href="#basespeck3" transform="translate(-41, -52)"/>
+ <use xlink:href="#basespeck3" transform="translate(-12, -78)"/>
+ <use xlink:href="#basespeck3" transform="translate(-42, -73)"/>
+ <use xlink:href="#basespeck3" transform="translate(-29, -68)"/>
+ <use opacity="1" xlink:href="#basespeck3" transform="translate(247, -109)"/>
+ <use opacity="1" xlink:href="#basespeck3" transform="translate(236, -81)"/>
+ <use opacity="1" xlink:href="#basespeck3" transform="translate(247, -55)"/>
+ <use opacity="1" xlink:href="#basespeck3" transform="translate(239, 17)"/>
+ <use opacity="1" xlink:href="#basespeck3" transform="translate(233, 5)"/>
+ <use opacity="1" xlink:href="#basespeck3" transform="translate(214, -1)"/>
+ <use xlink:href="#basepack3" transform="translate(52, 29)"/>
+ <use xlink:href="#basepack3" transform="translate(71, 34)"/>
+ <use xlink:href="#basepack3" transform="matrix(0.85, -0.53, 0.53, 0.85, -323.9, 293.3)"/>
+ <use xlink:href="#basepack3" transform="translate(-56.06, 29.8)"/>
+ <use xlink:href="#basepack3" transform="matrix(0.93, -0.38, 0.38, 0.93, -299.9, 188)"/>
+ </g>
+ <g id="glights">
+ <path id="light" d="m337,420c9-14,10-24,22-36,8-8,16-17,20-28,7-9,24-9,30,2,11,13,26,25,28,43-1,17-23,22-24,39,5,23-13,45-35,49-21,9-46,12-68,5-16-2-32,2-44,12-13,5-28-7-27-20-3-13-14-26-10-40,7-19,32-27,50-18,26,16,46-2,59-8z" filter="url(#blur6)" fill="url(#rGlight)"/>
+<g filter="url(#blur6)" opacity="0.3" fill="#fff">
+ <path id="light2" d="m341.5,461.4a36.87,5.051,0,1,1,-73.8,0,36.87,5.051,0,1,1,73.8,0z" transform="matrix(0.45, 0.1, -0.12, 0.57, 217, 171)"/>
+ <path id="light3" d="m350,449a16.29,17.68,0,1,1,-32.6,0,16.29,17.68,0,1,1,32.6,0z"/>
+</g>
+ </g>
+ <g id="gstrawberrymain">
+ <use id="strawberrybg" xlink:href="#strawberrymain" fill="url(#rGmain)" filter="url(#blur1)"/>
+ <path id="shadow" d="m376,470a75,31,0,1,1,-149,0,75,31,0,1,1,149,0z" transform="matrix(0.81, -0.38, 0.38, 0.81, -136, 121)" fill="url(#rGshadow)" filter="url(#blur06)"/>
+ <use id="strawberrypattern" opacity="0.2" xlink:href="#strawberrymain" filter="url(#blur6)" fill="url(#dotted)"/>
+ </g>
+ </defs>
+<g id="strawberry" transform="translate(-20, -168)">
+<title>A single strawberry with leafs and stem</title>
+<rect id="background" height="529" width="659" y="168" x="20" fill="url(#rGbackground)"/>
+<use xlink:href="#gstrawberrymain"/>
+<use xlink:href="#glights"/>
+<use xlink:href="#gspecks"/>
+<use id="leafs" xlink:href="#gleafs" opacity="0.9" stroke="lightgreen" stroke-width="1" stroke-opacity="0.4" filter="url(#blur1)"/>
+<use id="leaftop" xlink:href="#gleafs" opacity="0.2" filter="url(#crinkled)"/>
+<path id="stem" d="m157,248c101,37,97,88,141,135-6,7-15,10-23,14-19-67-62-107-133-144l15-5z" fill="url(#lGstem)" filter="url(#blur1)"/>
+</g>
+</svg>
